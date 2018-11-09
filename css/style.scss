@@ -1,4 +1,8 @@
-$color: purple;
+$maincolor: #8a00ff;
+
+h1{
+    text-align: center;
+}
 
 table.center{
     width: 300px;
@@ -6,14 +10,40 @@ table.center{
     margin-right: auto;
     text-align: left;
 }
+
 table.center td{
     border-bottom: solid 1px #ddd;
 }
 
-.blah {
-
+.container-fluid.intro{
+    max-width: 960px;
+    padding: 30px;
 }
-h1{
-    text-align: center;
 
+#name-text{
+    color: $maincolor
+}
+
+.intro{
+    text-align: left;
+}
+
+.centered {
+    text-align: center;
+}
+
+.intro-div {
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 100;
+    color: #778899
+}
+
+.intro-bottom{
+    text-align: right;
+}
+
+
+.top-buffer{
+    margin-top: 60px;
 }
