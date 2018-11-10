@@ -1,5 +1,17 @@
 $maincolor: #8a00ff;
 
+@media only screen and (max-width:768px){
+    body > .container-fluid .top-buffer{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:480px){
+    body > .container-fluid .top-buffer{
+        margin-top: 8px;
+    }
+}
+
+
 h1{
     text-align: center;
 }
