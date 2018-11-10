@@ -1,4 +1,5 @@
-$maincolor: #8a00ff;
+$maincolor: #7028A0;
+$secondarycolor: #19C573;
 
 @media only screen and (max-width:768px){
     body > .container-fluid .top-buffer{
@@ -36,26 +37,42 @@ table.center td{
     color: $maincolor
 }
 
-.intro{
-    text-align: left;
-}
+
 
 .centered {
     text-align: center;
 }
+.intro{
+    text-align: left;
+    .intro-div {
+        font-style: italic;
+        font-size: 40px;
+        font-weight: 100;
+        color: #778899
+    }
+    .intro-bottom{
+        text-align: right;
+    }
+    .top-buffer{
+        margin-top: 60px;
+    }
+}
 
-.intro-div {
+.mt-0{
+    color: $maincolor;
     font-style: italic;
-    font-size: 40px;
-    font-weight: 100;
-    color: #778899
+}
+.mt-0::after{
+    content: " \2610";
+    font-style: normal;
 }
 
-.intro-bottom{
-    text-align: right;
+.mt-0-completed{
+    @extend .mt-0;
+    color: $secondarycolor;
+
 }
-
-
-.top-buffer{
-    margin-top: 60px;
+.mt-0-completed::after{
+    content: " \2611";
+    font-style: normal;
 }

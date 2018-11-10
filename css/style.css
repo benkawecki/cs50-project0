@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media only screen and (max-width: 768px) {
   body > .container-fluid .top-buffer {
     margin-top: 30px;
@@ -29,30 +30,46 @@ table.center td {
 }
 
 #name-text {
-  color: #8a00ff;
-}
-
-.intro {
-  text-align: left;
+  color: #7028A0;
 }
 
 .centered {
   text-align: center;
 }
 
-.intro-div {
+.intro {
+  text-align: left;
+}
+.intro .intro-div {
   font-style: italic;
   font-size: 40px;
   font-weight: 100;
   color: #778899;
 }
-
-.intro-bottom {
+.intro .intro-bottom {
   text-align: right;
 }
-
-.top-buffer {
+.intro .top-buffer {
   margin-top: 60px;
+}
+
+.mt-0, .mt-0-completed {
+  color: #7028A0;
+  font-style: italic;
+}
+
+.mt-0::after, .mt-0-completed::after {
+  content: " ☐";
+  font-style: normal;
+}
+
+.mt-0-completed {
+  color: #19C573;
+}
+
+.mt-0-completed::after {
+  content: " ☑";
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
